@@ -4,7 +4,7 @@
         <li><a href="">Home</a></li>
         <li><a href="">Articles</a></li>
         <li><a href="">About</a></li>
-        <li><a href="">Home</a></li>
+        <li><a href="">Contact</a></li>
     </ul>
 </nav>
 
@@ -36,6 +36,7 @@
   p {
     font-family: 'Montserrat', sans-serif;
     font-weight: bold;
+    font-size: 1.2rem;
   }
 
 </style>
