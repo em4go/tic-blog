@@ -1,5 +1,5 @@
 <script>
-import GlassmorphismCard from "./GlassmorphismCard.svelte";
+import GlassmorphismCard from "$lib/GlassmorphismCard.svelte";
 
 </script>
 <header>
@@ -9,7 +9,7 @@ import GlassmorphismCard from "./GlassmorphismCard.svelte";
 
 <style>
   header {
-    background-image: url("../assets/rocket.jpg");
+    background-image: url("rocket.jpg");
     background-size: cover;
     background-position: 45%;
     width: 95%;
