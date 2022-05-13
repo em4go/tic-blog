@@ -5,6 +5,8 @@
 	import Navbar from '$lib/Navbar.svelte'
 	import Header from '$lib/header/Header.svelte'
 	import BlogEntry from '$lib/BlogEntry.svelte'
+	import Footer from '$lib/Footer.svelte'
+	import Quote from '$lib/quote/Quote.svelte'
 </script>
 
 <svelte:head>
@@ -13,33 +15,43 @@
 </svelte:head>
 
 
-<div class="main">
-	<Navbar />
-	<Header />
-	
-	<main class="articles">
-    
-    <div class="blog-entry-container">
+<Navbar />
+<Header />
+
+<main class="articles">
+	<div class="blog-entry-container">
 		<BlogEntry 
 		title={"Primer artículo del blog"}
 		date={"7 de mayo de 2022"}
 		imgPath={"coffee.jpg"}
 		imgAlt={"Ilustración 3D con objetos marrones"}
 		/>
-    </div>
-	</main>
-</div>
+	</div>
+	<div class="blog-entry-container">
+		<BlogEntry 
+		title={"Segundo artículo del blog"}
+		date={"12 de mayo de 2022"}
+		imgPath={"purple.jpg"}
+		imgAlt={"Ilustración 3D con objetos marrones"}
+		imageRight={true}
+		/>
+	</div>
+	<div class="blog-entry-container">
+		<BlogEntry 
+		title={"Tercer artículo del blog"}
+		date={"31 de mayo de 2022"}
+		imgPath={"shapes.jpg"}
+		imgAlt={"Ilustración 3D con objetos marrones"}
+		/>
+	</div>
+</main>
 
+<Footer>
+	<Quote />
+</Footer>
+  
 <style global>
 
-	.main {
-		width: 100vw;
-		max-width: 100%;
-		display: flex;
-		flex-direction: column;
-		align-items: center;
-	}
-	
 	main {
 		width: 100%;
 		margin-top: 4rem;

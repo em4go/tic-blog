@@ -4,8 +4,9 @@
     export let imgPath = ""
     export let imgAlt = ""
     export let link = "#"
+    export let imageRight = false;
 </script>
-<div class="container">
+<div class="container {imageRight ? 'reverse' : ''}">
     <div class="img-container">
         <img src="{imgPath}" alt="{imgAlt}">
     </div>
@@ -16,6 +17,10 @@
 </div>
 
 <style>
+    * {
+        box-sizing: border-box;
+    }
+
     .container {
         width: 100%;
         max-width: 100%;
@@ -58,7 +63,7 @@
         font-family: 'Roboto', sans-serif;
     }
 
-    @media screen and (min-width: 700px) {
+    @media screen and (min-width: 768px) {
         .container {
             flex-direction: row;
             align-items: center;
@@ -67,6 +72,13 @@
         a {
             padding-left: 4rem;
             padding-right: 4rem;
+            width: 50%;
+        }
+        .img-container {
+            width: 50%;
+        }
+        .reverse {
+            flex-direction: row-reverse;
         }
     }
 </style>
