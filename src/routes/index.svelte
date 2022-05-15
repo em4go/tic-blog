@@ -21,10 +21,11 @@
 <main class="articles">
 	<div class="blog-entry-container">
 		<BlogEntry 
-		title={"Primer artículo del blog"}
+		title={"Canales de youtube para aprender desarrollo web"}
 		date={"7 de mayo de 2022"}
 		imgPath={"coffee.jpg"}
 		imgAlt={"Ilustración 3D con objetos marrones"}
+		link={"canales-youtube-desarrollo-web"}
 		/>
 	</div>
 	<div class="blog-entry-container">
@@ -32,7 +33,7 @@
 		title={"Segundo artículo del blog"}
 		date={"12 de mayo de 2022"}
 		imgPath={"purple.jpg"}
-		imgAlt={"Ilustración 3D con objetos marrones"}
+		imgAlt={"Ilustración 3D con objetos morados"}
 		imageRight={true}
 		/>
 	</div>
@@ -41,7 +42,7 @@
 		title={"Tercer artículo del blog"}
 		date={"31 de mayo de 2022"}
 		imgPath={"shapes.jpg"}
-		imgAlt={"Ilustración 3D con objetos marrones"}
+		imgAlt={"Ilustración 3D con objetos de distintos colores"}
 		/>
 	</div>
 </main>
@@ -49,7 +50,7 @@
 <Footer>
 	<Quote />
 </Footer>
-  
+
 <style global>
 
 	main {
